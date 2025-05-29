@@ -1,1 +1,100 @@
-MEOW, something amazing might pop up here someday :3 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>METAL.BERLIN — MEOW</title>
+  <style>
+    :root {
+      --font-metal: /* Apple */ "Copperplate",
+    /* Windows */ "Impact", "Arial Black",
+    /* Google */ "Roboto Black",
+    system-ui, sans-serif;
+    }
+
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: #000; /* solid black */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: var(--font-metal);
+      padding: 0 1rem;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(3rem, 10vw, 5rem);
+      letter-spacing: 0.1em; 
+      
+
+    }
+
+    p {
+      margin: 0;
+      font-size: clamp(1.2rem, 4vw, 2rem);
+    }
+
+    /* Rainbow stripes for headline */
+    .rainbow-text {
+      background: repeating-linear-gradient(
+        to right,
+        #E40303 0%,
+        #E40303 16.66%,
+        #FF8A00 16.66%,
+        #FF8A00 33.32%,
+        #FFED00 33.32%,
+        #FFED00 49.98%,
+        #008026 49.98%,
+        #008026 66.64%,
+        #004DFF 66.64%,
+        #004DFF 83.30%,
+        #750787 83.30%,
+        #750787 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+
+    /* 7‑stripe lesbian flag for tagline */
+    .lesbian-text {
+      background: repeating-linear-gradient(
+        to right,
+        #D52D00 0%,
+        #D52D00 14.2857%,
+        #EF7627 14.2857%,
+        #EF7627 28.5714%,
+        #FF9A56 28.5714%,
+        #FF9A56 42.8571%,
+        #FFFFFF 42.8571%,
+        #FFFFFF 57.1428%,
+        #D162A4 57.1428%,
+        #D162A4 71.4285%,
+        #B55690 71.4285%,
+        #B55690 85.7142%,
+        #A30262 85.7142%,
+        #A30262 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="rainbow-text">METAL.BERLIN</h1>
+    <p class="lesbian-text">Something amazing might pop up here someday</p>
+    <p class="lesbian-text">Building a proper back-end could take a bit</p>
+    <br />
+    <p class="lesbian-text">Let's see where this goes :3</p>
+    <br />
+    <p class="lesbian-text">Current progress: 0%</p>
+    <p class="lesbian-text">I have the concept of a plan</p>
+  </main>
+</body>
+</html>
