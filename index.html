@@ -26,8 +26,8 @@
     h1 {
       margin: 0 0 0.5rem;
       font-size: clamp(3rem, 10vw, 5rem);
-      letter-spacing: 0.1em; 
-      
+      letter-spacing: 0.1em;
+
 
     }
 
@@ -58,6 +58,67 @@
       -webkit-text-fill-color: transparent;
       color: transparent;
     }
+    /* Trans pride horizontal line */
+    .rainbow-line {
+      border: none;              /* for <hr> */
+      height: 4px;               /* line thickness */
+      background: repeating-linear-gradient(
+        to right,
+        #E40303 0%,
+        #E40303 16.66%,
+        #FF8A00 16.66%,
+        #FF8A00 33.32%,
+        #FFED00 33.32%,
+        #FFED00 49.98%,
+        #008026 49.98%,
+        #008026 66.64%,
+        #004DFF 66.64%,
+        #004DFF 83.30%,
+        #750787 83.30%,
+        #750787 100%
+      );
+      border-radius: 999px;      /* nice pill-shaped ends */
+    }
+        /* 5-stripe trans pride flag for text */
+    .trans-text {
+      background: repeating-linear-gradient(
+        to right,
+        #55CDFC 0%,   /* light blue */
+        #55CDFC 20%,
+        #F7A8B8 20%,  /* light pink */
+        #F7A8B8 40%,
+        #FFFFFF 40%,  /* white */
+        #FFFFFF 60%,
+        #F7A8B8 60%,  /* light pink */
+        #F7A8B8 80%,
+        #55CDFC 80%,  /* light blue */
+        #55CDFC 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+    /* Trans pride horizontal line */
+    .trans-line {
+      border: none;              /* for <hr> */
+      height: 4px;               /* line thickness */
+      background: repeating-linear-gradient(
+        to right,
+        #55CDFC 0%,
+        #55CDFC 20%,
+        #F7A8B8 20%,
+        #F7A8B8 40%,
+        #FFFFFF 40%,
+        #FFFFFF 60%,
+        #F7A8B8 60%,
+        #F7A8B8 80%,
+        #55CDFC 80%,
+        #55CDFC 100%
+      );
+      border-radius: 999px;      /* nice pill-shaped ends */
+    }
+
 
     /* 7‑stripe lesbian flag for tagline */
     .lesbian-text {
@@ -83,18 +144,50 @@
       -webkit-text-fill-color: transparent;
       color: transparent;
     }
+    .lesbian-line {
+      border: none;              /* for <hr> */
+      height: 4px;               /* line thickness */
+      background: repeating-linear-gradient(
+        to right,
+        #D52D00 0%,
+        #D52D00 14.2857%,
+        #EF7627 14.2857%,
+        #EF7627 28.5714%,
+        #FF9A56 28.5714%,
+        #FF9A56 42.8571%,
+        #FFFFFF 42.8571%,
+        #FFFFFF 57.1428%,
+        #D162A4 57.1428%,
+        #D162A4 71.4285%,
+        #B55690 71.4285%,
+        #B55690 85.7142%,
+        #A30262 85.7142%,
+        #A30262 100%
+      );
+      border-radius: 999px;      /* nice pill-shaped ends */
+    }
   </style>
-</head>
-<body>
-  <main>
-    <h1 class="rainbow-text">METAL.BERLIN</h1>
-    <p class="lesbian-text">Something amazing might pop up here someday</p>
-    <p class="lesbian-text">Building a proper back-end could take a bit</p>
-    <br />
-    <p class="lesbian-text">Let's see where this goes :3</p>
-    <br />
-    <p class="lesbian-text">Current progress: 0%</p>
-    <p class="lesbian-text">I have the concept of a plan</p>
-  </main>
-</body>
-</html>
+    </head>
+        <body>
+          <main>
+            <h1 class="rainbow-text">METAL.BERLIN</h1>
+            <br />
+            <div class="lesbian-line"></div>
+            <br />
+            <p class="rainbow-text">Something amazing might pop up here someday</p>
+            <p class="rainbow-text">Building a proper back-end could take a bit</p>
+            <br />
+            <div class="trans-line"></div>
+            <br />
+            <p class="lesbian-text">Let's see where this goes :3</p>
+
+            <p class="lesbian-text">Last update: 24th Nov 2025</p>
+                        <br />
+              <div class="rainbow-line"></div>
+            <br />
+            <p class="trans-text">Still working on it, proof of concept is working</p>
+              <p class="trans-text">Guess going to concerts and festivals all the time</p>
+              <p class="trans-text">takes time away from working on projects</p>
+          </main>
+        </body>
+        </html>
